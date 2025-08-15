@@ -53,22 +53,20 @@
         /* Timeline CSS */
         .timeline {
     position: relative;
-    margin-left: 40px;
-    padding-left: 40px;
+    margin-left: 80px; /* بعد الخط عن الكلام */
+    padding-left: 20px;
     border-left: 3px solid #00aaff;
 }
 
 .timeline-item {
     position: relative;
     margin-bottom: 30px;
-    display: flex;
-    align-items: flex-start; /* تخلي النقطة مع النص */
 }
 
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: -25px; /* بعد الخط عن النص */
+    left: -12px; /* على حافة الخط */
     top: 0;
     width: 20px;
     height: 20px;
@@ -76,6 +74,7 @@
     border-radius: 50%;
     border: 3px solid #fff;
 }
+
 
         .skills, .projects {
             display: grid;
