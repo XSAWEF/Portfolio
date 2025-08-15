@@ -12,42 +12,50 @@
             background-color: #f4f4f4;
             color: #333;
         }
+
         header {
             background-color: #222;
             color: #fff;
-            padding: 100px;
-            min-height: 200px;
+            padding: 120px 40px; /* أعلى وأسفل أكبر لتناسب الصورة */
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 40px;
+            min-height: 300px; /* ارتفاع مناسب للصورة الكبيرة */
         }
+
         header img {
-            width: 200px;
-            height: 200px;
+            width: 250px;  /* تكبير الصورة */
+            height: 250px;
             border-radius: 50%;
             object-fit: cover;
         }
+
         header h1 {
             margin: 0;
         }
+
         header p {
             margin: 5px 0 0;
         }
+
         section {
             padding: 40px;
             max-width: 900px;
             margin: auto;
         }
+
         h2 {
             text-align: center;
             margin-bottom: 20px;
         }
+
         .skills, .projects {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
         }
+
         .card {
             background: #fff;
             padding: 20px;
@@ -55,12 +63,14 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             text-align: center;
         }
+
         footer {
             background: #222;
             color: #fff;
             text-align: center;
             padding: 10px;
         }
+
         a {
             color: #00aaff;
             text-decoration: none;
