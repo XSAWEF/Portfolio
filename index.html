@@ -52,28 +52,30 @@
 
         /* Timeline CSS */
         .timeline {
-            position: relative;
-            margin-left: 120px;
-            padding-left: 30px;
-            border-left: 3px solid #00aaff;
-        }
+    position: relative;
+    margin-left: 40px;
+    padding-left: 40px;
+    border-left: 3px solid #00aaff;
+}
 
-        .timeline-item {
-            margin-bottom: 30px;
-            position: relative;
-        }
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-start; /* تخلي النقطة مع النص */
+}
 
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -12px;
-            top: 0;
-            width: 20px;
-            height: 20px;
-            background-color: #00aaff;
-            border-radius: 50%;
-            border: 3px solid #fff;
-        }
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -25px; /* بعد الخط عن النص */
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #00aaff;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
 
         .skills, .projects {
             display: grid;
