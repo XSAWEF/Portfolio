@@ -52,29 +52,37 @@
 
         /* Timeline CSS */
         .timeline {
-    position: relative;
-    margin-left: 20px; /* بعد الخط عن الكلام */
-    padding-left: 20px;
-    border-left: 3px solid #00aaff;
-}
+            position: relative;
+            margin-left: 20px;
+            padding-left: 20px;
+            border-left: 3px solid #00aaff;
+        }
 
-.timeline-item {
-    position: relative;
-    margin-bottom: 30px;
-}
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
 
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -18px; /* على حافة الخط */
-    top: -20PX;
-    width: 20px;
-    height: 20px;
-    background-color: #00aaff;
-    border-radius: 50%;
-    border: 3px solid #fff;
-}
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -18px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background-color: #00aaff;
+            border-radius: 50%;
+            border: 3px solid #fff;
+        }
 
+        .timeline-item ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .timeline-item ul li {
+            margin-bottom: 8px;
+        }
 
         .skills, .projects {
             display: grid;
@@ -147,6 +155,32 @@
     </div>
 </section>
 
+<!-- Work Experience Timeline (بعد المهارات مباشرة) -->
+<section>
+    <h2>Work Experience</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <h3>RF Test Engineer at Eventum IT Solution (October 2022 - October 2023)</h3>
+            <ul>
+                <li>Check performance of Mobile network by tests like power level, quality, cross sector, DL/UL throughput, CSFB and VOLTE.</li>
+                <li>Survey indoor to detect mobile network problems like poor coverage, bad quality, low throughput, UL interference and others.</li>
+                <li>Analyze logfiles to detect network problems.</li>
+                <li>Find solutions to improve Mobile network like Micro system or Donor antennas or outdoor actions (tilt, increase capacity, change frequency, etc.).</li>
+            </ul>
+        </div>
+        <div class="timeline-item">
+            <h3>Radio Quality Assurance Engineer at Huawei (November 2022 - Present)</h3>
+            <ul>
+                <li>Handling Quality alert and Monitoring KPIs of Network over BSCs/RNCs hourly.</li>
+                <li>Handling Quality alert and Monitoring KPIs over 2G/3G/LTE sites.</li>
+                <li>Handling customer complaints.</li>
+                <li>Check KPIs over sites after actions taken from NPO and TX teams.</li>
+                <li>Investigate root causes of KPIs degradation and recommend solutions.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
 <section>
     <h2>Projects</h2>
     <div class="projects">
@@ -162,8 +196,8 @@
 </section>
 
 <footer>
-    <p>Contact: <a href="mailto:example@email.com">mohamed.eisa17899@gmail.com</a></p>
-    <p>Contact: <a href="mailto:example@email.com">https://www.linkedin.com/feed/</a></p>
+    <p>Contact: <a href="mailto:mohamed.eisa17899@gmail.com">mohamed.eisa17899@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/feed/">https://www.linkedin.com/feed/</a></p>
 </footer>
 
 </body>
